@@ -10,6 +10,8 @@ crossScalaVersions := Seq("2.12.6", "2.11.12")
 scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked")
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
+libraryDependencies += "org.scalactic" %%% "scalactic" % "3.0.5"
+libraryDependencies += "org.scalatest" %%% "scalatest" % "3.0.5" % "test"
 
 // publishing
 homepage := Some(url("https://github.com/fbaierl/scalajs-svg-util"))
